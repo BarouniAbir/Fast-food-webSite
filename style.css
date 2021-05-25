@@ -1,0 +1,435 @@
+html
+{
+font-size: 10px;
+}
+
+body
+{
+margin: 0;
+font-family: 'Lato', 'sans-serif';
+background-color: #FCFC87;
+}
+
+/*Navigation*/
+
+#nav
+{
+    position: fixed;
+    z-index: 40;
+    width: 100%;
+    background-color :#FFE410;
+    text-align: center;
+    height: 10rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav a
+{
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem 5rem;
+    line-height: 8rem;
+    font-family: 'Kaushan Script';
+    margin: auto;
+    color: black;
+}
+
+#nav a:active
+{
+    font-size: 4rem;
+}
+
+.icon
+{
+    display: none;
+}
+
+/*Header*/
+
+header
+{
+    height: 100vh;
+    width: 100%;
+    background: url("../images/backWall2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1
+{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+    text-align: center;
+    color:rgb(228, 128, 61);
+    position: relative;
+    top: 30rem;
+    font-family: 'Kaushan Script';
+    font-size: 10rem;
+    margin: 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header h2
+{
+    margin: 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 32rem;
+    font-family: 'Kaushan Script';
+    /*font-family: 'Reggae One', cursive;*/
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header #arrow
+{
+    color: rgb(187, 72, 35 );
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+    font-size: 4rem;
+    line-height: 8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 0 0 white;
+    animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+    to 
+    {
+        box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
+    }
+}
+
+/*Photo*/
+
+.aboutus
+{
+    background-color: white;
+    padding-bottom: 18rem;
+}
+
+.center
+{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.h2
+{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba(248, 26, 26, 0.973),rgb(131, 75, 75));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    padding-top: 5rem;
+}
+
+.center2
+{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.aboutUs
+{
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.parag
+{
+font-size: 2rem;
+}
+
+.center2::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center2 [class^="discription"]
+{
+float: left;
+}
+
+.center2 [class^="discription"]:not(:last-child)
+{
+margin-right: 7rem;
+}
+
+.center2 .discription
+{
+    width: calc((100% - 7rem) / 2);
+}
+
+.pics
+{
+    position: relative;
+}
+
+.composition_photo
+{
+    width: 55%;
+    box-shadow: 0 1rem 4rem rgb(235, 201, 52);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2rem;
+    outline-offset: 2rem;
+}
+
+.composition_photo--1
+{
+    left: 0;
+    top: -2rem;
+}
+
+.composition_photo--2
+{
+    right: 0;
+    top: 2rem;
+}
+
+.composition_photo--3
+{
+   left: 20%;
+    top: 10rem;
+}
+
+.composition_photo:hover
+{
+outline: 1.5rem;
+transform: scale(1.05) translateY(-0.5rem);
+box-shadow: 0 2rem 4rem yellow;
+z-index: 30;
+}
+
+/*Section Prix*/
+#prix
+{
+    border-top: 1px solid yellow;
+}
+.mp
+{
+    font-family: sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(248, 26, 26, 0.973),rgb(131, 75, 75));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    padding-top: 5rem;
+}
+#hpngts
+{
+    background: cornsilk;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu
+{
+    width: 30rem;
+    height: 45rem;
+    margin: 2rem;
+    transition: all 0.2s ease-in;
+}
+.menu:nth-child(1)
+{
+    border: 1px solid rgba(248, 26, 26, 0.555);
+}
+.menu:nth-child(2)
+{
+    border: 1px solid rgba(248, 226, 26, 0.555);
+}
+.menu:nth-child(3)
+{
+    border: 1px solid rgba(248, 26, 26, 0.555);
+}
+.head
+{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+.head p
+{
+    background-color: rgba(248, 226, 26, 0.555);
+    margin: 0;
+    font-size: 3rem;
+    line-height: 10rem;
+    font-family: 'Courier New', sans-serif , Courier, monospace, sans-serif;
+}
+.types
+{
+margin: auto;
+text-align: center;
+font-size: 2rem;
+height: 6rem;
+line-height: 6rem;
+}
+.prix
+{
+    background-color: rgba(248, 226, 26, 0.555);
+    margin: 0;
+    height: 11rem; 
+}
+.prix p
+{
+    margin: 0 auto;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 11rem;
+}
+.menu:nth-child(2) .types
+{
+    background: rgba(248, 226, 26, 0.555);;
+}
+.menu:nth-child(2) .head
+{
+    color: tomato;
+}
+.menu:hover
+{
+    transform: scale(1.1);
+}
+
+/* Section livraison */
+
+#livraison
+{
+    height: 48rem;
+    width:100%;
+    background: url(../images/livraison31.jpg);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+}
+
+.cadre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100rem;
+    height: 40rem;
+    transform: translate(-50%,-50%);
+    border-radius: 2px;
+    background: rgba(55,55,55,0.3);
+    color: white;
+}
+
+.centre {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -2.25rem;
+   
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    text-align: center;
+    line-height: 45px;
+    
+}
+
+.carousel .changeHidden{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    height: 13rem;
+    line-height: 13rem;
+    width: 100rem;
+    overflow: hidden;
+
+}
+
+.carousel .changeHidden .contenant {
+
+    position: relative;
+    animation: carousel 8s ease-in-out infinite;
+    text-align: center;
+
+}
+
+.carousel .changeHidden .element {
+    font-weight: 700;
+    font-size: 8rem;
+
+}
+
+@keyframes carousel {
+    0%, 20% {
+        transform: translateY(0);
+    }
+    25%, 45% {
+        transform: translateY(-13rem);
+    }
+    50%, 70% {
+        transform: translateY(-26rem);
+    }
+    75%, 95% {
+        transform: translateY(-39rem);
+    }
+    100% {
+        transform: translateY(-52rem);
+    }
+}
+
+
+/* Footer */
+/* section #contact
+{
+    position: relative;
+}*/
+
+footer {
+background-color: rgb(97, 97, 97);
+    
+padding-top: 0px;
+padding-bottom: 0px;
+height: 200px; 
+
+}
+footer h3
+{
+    
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 60px 50px 20px 50px;
+    
+}
+footer .Copyright
+{
+
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
